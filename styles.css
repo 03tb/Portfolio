@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 body, 
 #container {
@@ -35,6 +39,15 @@ body,
 
 /* Hero Section */
 
+#hero {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(160, 160, 160);
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
 .greeting {
     margin-top: 0;
     margin-bottom: 3rem;
@@ -44,6 +57,7 @@ body,
 .greeting-header {
     font-size: 4rem;
     margin-bottom: 3rem;
+    font-weight: 800;
 }
 
 .greeting-paragraph {
@@ -51,11 +65,7 @@ body,
     margin-bottom: 3rem;
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(160, 160, 160);
-}
+
 
 .introduction {
     display: flex;
@@ -79,20 +89,23 @@ body,
 }
 
 /* About section & skills */
-.about {
+#about {
     display: flex;
     flex-direction: column;
     margin: 50px;
     gap: 50px;
     align-items: center;
+    height: 100vh;  
 }
 
 .about-paragraph {
-    width: 500px;
+    width: 55rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
 }
 
 
-.skills-icon {
+.skills-icon i {
     font-size: 7rem;
     color: red;
 }
@@ -102,4 +115,18 @@ body,
     justify-content: center;
     align-items: center;
     gap:3rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.icon-container p {
+    color:black;
+    font-size: 1rem;
+    font-weight: 900;
 }
