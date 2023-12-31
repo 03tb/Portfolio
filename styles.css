@@ -42,14 +42,17 @@ body,
 
 
 /* Navigation bar */
-.nav-menu {
+#nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top:0px;
+    background: #1b1a1a;
+    height: 10vh;
 }
 
 .nav-logo {
-    margin-top: 2rem;
     margin-left: 3rem;
     color:rgb(182,182,182);
 }
@@ -61,7 +64,6 @@ body,
 }
 
 .nav-links {
-    margin-top: 2rem;
     margin-right: 2rem;
 }
 
@@ -78,6 +80,12 @@ body,
     color:rgb(214,214,214);
     text-shadow: 1px 1px 0.8rem white;
     transition: color 0.5s ease 0s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 /* Hero Section */
@@ -145,8 +153,14 @@ body,
     letter-spacing: 0.05rem;
 }
 
-.about-header {
-    font-weight: 500;
+.about-header{
+    margin-top: 11vh;
+}
+
+.about-header, 
+.skills-header {
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 
@@ -160,10 +174,6 @@ body,
     justify-content: center;
     align-items: center;
     gap:3rem;
-}
-
-.skills-header {
-    font-weight: 500;
 }
 
 .icon-container {
