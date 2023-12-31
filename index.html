@@ -18,7 +18,7 @@
                     <a href="index.html#container">Home</a>
                     <a href="index.html#about">About</a>
                     <a href="index.html#projects">Projects</a>
-                    <a href="">Contact</a>
+                    <a href="index.html#contact">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -30,35 +30,92 @@
                     <h1 class="greeting-header">Service Desk Analyst turned Web Developer</h1>
                 </div>
             </div>
-            <!-- Consider adding changing greetings for Hi like Bonjour, Kia ora, etc -->
- 
         </div>
         <div id="about">
-            <h1 class="about-header">About Me</h1>
-            <p class="about-paragraph">I am a new grad that completed a B. Information Sciences majoring in IT. Having always been fascinated by Apple's product pages, I undertook courses ranging from UX/UI Design and Web develeopment with a goal in mind of becoming a Front-end developer.</p>
+            <h1 class="about-header">About me</h1>
+            <p class="about-paragraph">I recently graduated with a Bachelor of Information Sciences majoring in IT. Having always been fascinated by Apple's product pages, I undertook courses ranging from UX/UI Design and Web develeopment with a goal in mind of becoming a Front-end developer.</p>
             <h1 class="skills-header">Tools and skillset</h2>
             <div class="skills-icon">
-                <span class="icon-container">
+                <div class="icon-container">
                     <i class="fab fa-html5 skills-icon"></i>
                     <p>HTML5</p>
-                </span>
-                <span class="icon-container">
+                </div>
+                <div class="icon-container">
                     <i class="fab fa-css3 skills-icon"></i>
                     <p>CSS3</p>
-                </span>
-                <span class="icon-container">
+                </div>
+                <div class="icon-container">
                     <i class="fab fa-js-square skills-icon"></i>
                     <p>JAVASCRIPT</p>
-                </span>
+                </div>
             </div>
+            <h3>More to come...</h3>
         </div>
         <div id="projects">
-            <h1 class="projects-header">My Projects</h1>
-            <div class="project-container"></div>
-            <div class="project-container"></div>
-            <div class="project-container"></div>
+            <h1 class="projects-header">Projects</h1>
+            <div class="projects-showcase">
+                <div class="project-container">
+                    <h3>Personal Website</h3>
+                    <img src="/images/portfolio-previews/Portfolio.png" alt="Personal Portfolio Preview Image" class="portfolio-preview-img">
+                    <p class="portfolio-description">This is my first attempt at creating a portfolio website to showcase my web development skills after completing the Foundational Course by The Odin Project. This project was created solely using Vanilla CSS and HTML.</p>
+                    <div class="project-links">
+                        <a href="https://03tb.github.io/Portfolio" target="_blank">Live Demo</a>
+                        <a href="https://github.com/03tb/Portfolio" target="_blank" class="project-links">View source code on Github</a>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <h3>Apple Store Clone - Coming Soon</h3>
+                    <img src="/images/portfolio-previews/coming-soon.png" alt="Personal Portfolio Preview Image" class="coming-soon">
+                    <p class="portfolio-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet id eum eligendi illum voluptates itaque ut repellendus, tempore tempora beatae provident obcaecati autem animi voluptatem veritatis doloremque illo at!</p>
+                    <div class="project-links">
+                        <a href="" class="project-links">Live Demo</a>
+                        <a href="" class="project-links">View source code on Github</a>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <h3>HTML Email Templates - Coming Soon</h3>
+                    <img src="/images/portfolio-previews/coming-soon.png" alt="Personal Portfolio Preview Image" class="coming-soon">
+                    <p class="portfolio-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo eveniet id eum eligendi illum voluptates itaque ut repellendus, tempore tempora beatae provident obcaecati autem animi voluptatem veritatis doloremque illo at!</p>
+                    <div class="project-links">
+                        <a href="" class="project-links">Live Demo</a>
+                        <a href="" class="project-links">View source code on Github</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="contact"></div>
+        <div id="contact">
+            <h1 class="contact-header">Contact</h1>
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h3 class="contact-message">Anything caught your eye?</h3>
+                    <p class="contact-description">If you have any questions or would like to collaborate, please feel free to reach out through any of my links below or by email through the form.</p>
+                    <div class="contact-icons">
+                        <a href="https://linkedin.com/thomasbaeg" target="_blank"><button class="contact-socials-button">
+                            <i class='fab fa-linkedin' class="contact-socials-button"></i>
+                        </button></a>
+                        <a href="https://github.com/03tb" target="_blank"><button class="contact-socials-button">
+                            <i class='fab fa-github' class="contact-socials-button"></i>
+                        </button></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="" class="contact-right">
+
+                        <label for="username" class="form-label">Name</label>
+                        <input type="text" id="username" name="username" placeholder="Your name">
+                        
+                        <label for="useremail" class="form-label">Email</label>
+                        <input type="email" id="useremail" name="useremail" placeholder="Your email">
+
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" class="text-area"></textarea>
+                    
+                        <input type="submit" value="Submit" id="form-submit">
+                    
+                      </form>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

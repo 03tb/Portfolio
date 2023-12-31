@@ -49,12 +49,14 @@ body,
     position: sticky;
     top:0px;
     background: #1b1a1a;
-    height: 10vh;
+    height: 5vh;
 }
 
 .nav-logo {
     margin-left: 3rem;
     color:rgb(182,182,182);
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .nav-link-container {
@@ -70,7 +72,8 @@ body,
 .nav-links a{
     list-style: none;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
     width:4rem;
     padding: 1rem;
     color:rgb(182,182,182);
@@ -80,12 +83,6 @@ body,
     color:rgb(214,214,214);
     text-shadow: 1px 1px 0.8rem white;
     transition: color 0.5s ease 0s;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
 }
 
 /* Hero Section */
@@ -120,14 +117,15 @@ body,
 .introduction {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     margin: 50px;
     gap: 60px;
 }
 
+
 .headshot-img {
     width: 400px;
-    box-shadow: 0 0 1rem 1rem #252424 inset;
+    border-radius: 5rem;
 }
 
 .introduction-right {
@@ -141,10 +139,7 @@ body,
 #about {
     display: flex;
     flex-direction: column;
-    margin: 50px;
-    gap: 50px;
     align-items: center;
-    height: 100vh;  
 }
 
 .about-paragraph {
@@ -154,19 +149,25 @@ body,
 }
 
 .about-header{
-    margin-top: 11vh;
+    margin-bottom: 7vh;
 }
 
 .about-header, 
-.skills-header {
+.skills-header,
+.projects-header,
+.contact-header {
     font-size: 4rem;
     font-weight: 600;
+    margin-top: 10vh;
 }
 
+.skills-header {
+    margin-top: 10vh;
+}
 
 .skills-icon i {
     font-size: 7rem;
-    color: red;
+    color: rgb(182,182,182);
 }
 
 .skills-icon {
@@ -187,4 +188,142 @@ body,
 .icon-container p {
     font-size: 1rem;
     font-weight: 900;
+}
+
+/* projects section */
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.projects-showcase {
+    margin-top: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-container img {
+    width: 25vw;
+}
+
+.project-container h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-links a {
+    font-size: 1.4rem;
+    color: rgb(182,182,182);
+    text-decoration: underline solid 0.2rem;
+}
+
+.portfolio-description {
+    width: 25vw;
+    font-size: 1.1rem;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+/* Contact secion */
+
+#contact {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+}
+
+.contact-container {
+    display: flex;
+    gap: 5vw;
+}
+.contact-header {
+    margin-bottom: 7vh;
+}
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-description {
+    width: 20vw;
+    font-size: 1.5rem;
+}
+
+.contact-message {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 2vh;
+}
+
+.form-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-right input {
+    height: 2rem;
+    background-color: #252424;
+    border: none;
+    color:  rgb(182,182,182);
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.text-area,
+#form-submit {
+    height: 10vh;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    background-color: #252424;
+    color: rgb(182,182,182);
+    border-radius: 10px;
+}
+
+#form-submit {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.contact-icons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.contact-socials-button {
+    font-size: 3rem;
+    color:  rgb(182,182,182);
+    background-color: #252424;
+    border-radius: 5px;
 }
