@@ -12,3 +12,5 @@ Functionality changes:
 - [ ] Re-do CSS using variable styling
 - [ ] Look for ways to implement JS
 - [ ] Enable functionality to contact form.
+
+## [Link to live demo](https://03tb.github.io/Portfolio "Live Demo Link") ##
