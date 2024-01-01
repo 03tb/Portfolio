@@ -327,3 +327,41 @@ body,
     background-color: #252424;
     border-radius: 5px;
 }
+
+
+/* fade in animation */
+
+@media (prefers-reduced-motion: no-preference) {
+
+    .fade-in-start {
+        animation: fade-up 0.7s;
+    }
+    
+    @keyframes fade-up {
+        0% {
+            opacity: 0;
+            transform: translateY(10vh) scale(1);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+        }
+    }
+    @keyframes fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-1vh) scale(1);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateY(0px) scale(1);
+        }
+    }
+    
+    .fade-down {
+        animation: fade-down 0.7s 0.4s backwards;
+    }
+}
+
