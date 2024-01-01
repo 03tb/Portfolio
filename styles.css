@@ -214,9 +214,11 @@ body,
     justify-content: space-between;
 }
 
-.project-container img {
-    width: 25vw;
+.project-container > img {
+    width: 25vw; 
+    height: 13vw;
 }
+
 
 .project-container h3 {
     font-size: 2rem;
